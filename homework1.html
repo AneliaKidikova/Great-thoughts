@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <div id="random"></div>
-    <input id="inputField" type="text" >
-    <button id="finish" onclick="compare()">Submit</button>
-    <div id="info"></div>
-  </body>
-  <!--script src="task1.js"></script-->
-  <script src="homework1.js"></script>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="words">
+                <p class="info">Моля подредете мисълта:</p>
+                <p id="random"></p>
+            </div>
+
+            <input id="inputField" type="text" class="input-words" placeholder="Моля въведете мисълта в правилният ред" >
+
+            <button id="finish" onclick="compare()" class="check">Провери</button>
+
+            <div class="bio-info">
+                <p id="info" class="info-author"></p>
+            </div>
+        </div>
+    </body>
+    
+    <!--script src="task1.js"></script-->
+    <script src="homework1.js"></script>
 </html>
