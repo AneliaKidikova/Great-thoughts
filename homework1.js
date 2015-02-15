@@ -1,17 +1,3 @@
-var authorsArray=[
-    {
-        authorName:"Алберт Айнщайн",
-        info:"1879 - 1955",
-        quotes:["Ala bala portokala.","edin drug citat","dasdasd dsasdasa","dasdas ldj1 daskljdwq"]
-    },
-    {
-        authorName:"Проба мроба",
-        info: "neshto",
-        quotes:["citat edno","citat dve","citat tri"]
-    }
-];
-
-
 var authorsArray=[{
   authorName:"Алберт Айнщайн",
   info:"(1879 - 1955)",
