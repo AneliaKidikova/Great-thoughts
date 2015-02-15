@@ -1,13 +1,24 @@
 var authorsArray=[{
   authorName:"Алберт Айнщайн",
-  info:"1879 - 1955",
-  quotes:["Ala bala portokala.","edin drug citat","dasdasd dsasdasa","dasdas ldj1 daskljdwq"]
+  info:"(1879 - 1955)",
+  quotes:["Вечната загадка на света е неговата познаваемост","Всяко постижение в науката започва с опит и свършва с него","Въображението е по-важно от знанието"]
 },
 {
-  authorName:"Проба мроба",
-  info: "neshto",
-  quotes:["citat edno","citat dve","citat tri"]
-}];
+  authorName:"Наполеон Бонапарт",
+  info: "(1769 — 1821)",
+  quotes:["Чуждата глупост не ни прави по-умни","Никога не прекъсвай врага си, докато прави грешка","Славата отлита, но забравата е завинаги"]
+},
+{
+  authorName:"Джордж Бърнард Шоу",
+  info: "(1856-1950)",
+  quotes:["Най-трудно е да се отговори на въпрос, на който отговорът е очевиден","Не е нужно да изядеш цялото яйце, за да разбереш, че е развалено"]
+}
+
+];
+
+setTimeout(function(){ alert("You ran out of time"); }, 60000);
+
+
 var currentQuote = {
   quoteId:null,
   authorId:null,
