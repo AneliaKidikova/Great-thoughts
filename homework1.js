@@ -91,12 +91,13 @@ function shuffle(array) {
 
 function compare() {
     if(document.getElementById("inputField").value===authorsArray[currentQuote.authorId].quotes[currentQuote.quoteId]) {
-        alert("Correct!");
-        stopTimer();
 
-
+        document.getElementById("correct").setAttribute("class", "block correct"); 
+        document.getElementById("wrong").setAttribute("class", "");
     } else {
-        alert("Wrong answer!")
+        document.getElementById("wrong").setAttribute("class", "block wrong"); 
+        document.getElementById("correct").setAttribute("class", ""); 
+        stopTimer();
     }
 }
 

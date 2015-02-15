@@ -54,10 +54,11 @@ a {
     text-decoration: none;
 }
 .wrapper {
+    padding: 50px 0 0 0;
+    width: 500px;
     margin: 100px;
+    margin: 0 auto;
 }
-
-
 .words {
     padding: 0;
     margin: 0 0 10px 0;
@@ -71,8 +72,28 @@ a {
     color: #999;
 }
 .input-words {
-    width: 400px;
+    width: 500px;
+    height: 80px;
     margin-bottom: 10px;
+    padding: 6px;
+    clear: both;
+
+    border-top: 1px solid #fafafa;
+    border-left: 1px solid #fafafa;
+    border-right: 1px solid #fafafa;
+    border-bottom: 1px solid #999;
+
+    font-size: 18px;
+    color: #000;
+
+    outline: none;
+
+    resize: none;
+}
+.check {
+    width: 312px;
+    height: 36px;
+    margin: 0 auto 40px;
     padding: 8px 6px;
     clear: both;
 
@@ -89,6 +110,7 @@ a {
     width: 400px;
     height: 36px;
     margin: 0 0 20px 0;
+
     display: block;
     clear: both;
     cursor: pointer;
@@ -109,4 +131,25 @@ a {
 .info-author {
     padding: 0;
     margin: 0;
+}
+.labels {
+    height: 40px;
+    margin: 0;
+}
+.labels p {
+    padding: 0;
+    margin: 0;
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.labels p.block {
+    display: block;
+}
+.labels p.wrong {
+    color: red;
+}
+.labels p.correct {
+    color: green;
 }
