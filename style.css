@@ -94,6 +94,23 @@ a {
     width: 312px;
     height: 36px;
     margin: 0 auto 40px;
+    padding: 8px 6px;
+    clear: both;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #999;
+
+    font-size: 18px;
+
+    outline: none;
+}
+.check {
+    width: 400px;
+    height: 36px;
+    margin: 0 0 20px 0;
+
     display: block;
     clear: both;
     cursor: pointer;

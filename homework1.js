@@ -1,3 +1,17 @@
+var authorsArray=[
+    {
+        authorName:"Алберт Айнщайн",
+        info:"1879 - 1955",
+        quotes:["Ala bala portokala.","edin drug citat","dasdasd dsasdasa","dasdas ldj1 daskljdwq"]
+    },
+    {
+        authorName:"Проба мроба",
+        info: "neshto",
+        quotes:["citat edno","citat dve","citat tri"]
+    }
+];
+
+
 var authorsArray=[{
   authorName:"Алберт Айнщайн",
   info:"(1879 - 1955)",
@@ -15,10 +29,29 @@ var authorsArray=[{
 }
 
 ];
+document.addEventListener('DOMContentLoaded', function(){
+   startTime();
+ });
 
-setTimeout(function(){ alert("You ran out of time"); }, 60000);
+var timer = null;
+function startTime ()
+{
+  if(timer == null)
+  {
+    timer = setTimeout(function(){alert("time out !");}, 60000)
+  }
+}
 
 
+function stopTimer()
+{
+
+  if(timer != null)
+  {
+    clearTimeout(timer);
+    timer = null;
+  }
+}
 var currentQuote = {
     quoteId:null,
     authorId:null,
@@ -32,7 +65,7 @@ function randomization(obj) {
 
         if(obj[randomAuthorId].quotes.length>0) {
             var randomId = Math.floor(Math.random()* obj[randomAuthorId].quotes.length);
-            
+
             if(obj[randomAuthorId].quotes[randomId].length>0) {
                     var splitArray = obj[randomAuthorId].quotes[randomId].split(' ');
                     currentQuote.randomArray = shuffle(splitArray);
@@ -71,11 +104,13 @@ function shuffle(array) {
 
 function compare() {
     if(document.getElementById("inputField").value===authorsArray[currentQuote.authorId].quotes[currentQuote.quoteId]) {
+
         document.getElementById("correct").setAttribute("class", "block correct"); 
         document.getElementById("wrong").setAttribute("class", "");
     } else {
         document.getElementById("wrong").setAttribute("class", "block wrong"); 
         document.getElementById("correct").setAttribute("class", ""); 
+        stopTimer();
     }
 }
 
