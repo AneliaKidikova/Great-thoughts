@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var authorsArray=[
     {
         authorName:"Алберт Айнщайн",
@@ -12,7 +11,7 @@ var authorsArray=[
     }
 ];
 
-=======
+
 var authorsArray=[{
   authorName:"Алберт Айнщайн",
   info:"(1879 - 1955)",
@@ -34,7 +33,6 @@ var authorsArray=[{
 setTimeout(function(){ alert("You ran out of time"); }, 60000);
 
 
->>>>>>> 2b3233106f795ba7eb4bb3624b50978ff2c97385
 var currentQuote = {
     quoteId:null,
     authorId:null,
